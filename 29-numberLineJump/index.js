@@ -23,20 +23,15 @@ Análisis matemático
 
 La ecuación de posición para cada canguro después de n 
 saltos es:
-Posicioˊn del canguro 1=x1+n×v1
-Posicioˊn del canguro 1=x1+n×v1
-Posicioˊn del canguro 2=x2+n×v2
-Posicioˊn del canguro 2=x2+n×v2
+Posicioˊn del canguro 1= x1+n×v1
+Posicioˊn del canguro 2= x2+n×v2
 
 Queremos encontrar un n donde ambas posiciones sean iguales:
-x1+n×v1=x2+n×v2
 x1+n×v1=x2+n×v2
 
 Despejamos n:
 x1−x2=n×(v2−v1)
-x1−x2=n×(v2−v1)
-n=x1−x2v2−v1
-n=v2−v1x1−x2​
+n = x1−x2 / v2−v1
 
 Para que n sea válido:
 
