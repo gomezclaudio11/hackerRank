@@ -37,4 +37,33 @@ Por ejemplo, si tenemos el array de calificaciones
 gradingStudents será [75, 67, 40, 33], ya que 73 se redondea
  a 75 y 38 se redondea a 40, mientras que 67 y 33 no se
   modifican
+
+   ¿Por qué solo se redondea si (grades[i] % 5) >= 3?
+Si el residuo es 3 o más, significa que el número está más 
+cerca del siguiente múltiplo de 5 que del actual, entonces 
+se redondea hacia arriba.
+
+Si el residuo es menor a 3, no se redondea, porque el número 
+está más cerca del múltiplo de 5 anterior.
+
+Ejemplo práctico
+Supongamos que grades[i] = 73.
+
+Calculamos el módulo 5 (el residuo de dividir entre 5):
+
+73 % 5 = 3
+
+Esto significa que 73 está a 3 unidades de ser múltiplo de 5 (75).
+
+Aplicamos la fórmula:
+
+5 - (73 % 5) = 5 - 3 = 2
+
+Esto nos da cuánto hay que sumar a 73 para que sea un múltiplo de 5.
+
+Se redondea el número:
+
+grades[i] = 73 + 2 = 75
+
+Ahora grades[i] es 75, que es un múltiplo de 5.
 */
