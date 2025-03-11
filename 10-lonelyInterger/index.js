@@ -84,3 +84,35 @@ En el contexto de la función lonelyinteger, se utiliza la
     aparecen dos veces se "cancelan" entre sí, dejando solo 
     el número que aparece una sola vez.
  */
+/**}
+ * 
+ Vamos a analizar paso a paso por qué 1 ^ 2 da 3.
+Cómo funciona el operador XOR (^)
+
+El operador ^ (XOR) actúa a nivel de bits. Su regla es:
+
+    1 ^ 1 = 0
+    0 ^ 0 = 0
+    1 ^ 0 = 1
+    0 ^ 1 = 1
+
+Básicamente, si los bits son iguales, el resultado es 0; si son diferentes, el resultado es 1.
+Ejemplo: 1 ^ 2
+
+Vamos a representar 1 y 2 en binario y hacer la operación XOR bit a bit:
+Conversión a binario:
+
+1 = 0001
+2 = 0010
+
+Aplicamos XOR bit a bit:
+
+  0001   (1)
+^ 0010   (2)
+--------
+  0011   (3)
+
+Resultado en decimal:
+
+0011 en binario es 3 en decimal.
+ */
